@@ -1,0 +1,18 @@
+INSERT INTO Registry ( RegistryID, SubtypeID ) VALUES ( 'Aaron Test', 'Townsperson' );
+INSERT INTO GearAppearanceItems(GearAppearanceID) VALUES("GA_Outfit_Aaron_Test1");
+INSERT INTO Registry(RegistryID, SubtypeID) VALUES("Outfit_Aaron_Test1_Common", "GearOutfit");
+INSERT INTO LockDefinition(LockID, LockTypeID) VALUES("Outfit_Aaron_Test1_Common", "Simple_Unlocked");
+INSERT INTO ItemDefinition(ItemID, ItemType, RarityTier, EconomyValue, SellPrice, Inventoryable, Persistent, Giftable, Sellable, Dropable, SlotLevel, Consumable, TriggerAbilityOnConsume, LockID, UsableFromInventory, UIDisplayMethod, UsableOnDiamond, StorageLocation) VALUES("Outfit_Aaron_Test1_Common", "GearAesthetic", "Common", "0", "0", "1", "0", "1", "1", "1", "Single", "0", "0", "Outfit_Aaron_Test1_Common", "0", "NoNotification", "0", "CostumeStorage");
+INSERT INTO GearItems(GearID, SlotID, GearAppearanceID, NumGeneralAbilities) VALUES("Outfit_Aaron_Test1_Common", "Outfit", "GA_Outfit_Aaron_Test1", "1");
+UPDATE Registry SET RegistryID = 'AaronTest' WHERE RegistryID = 'Aaron Test';
+INSERT INTO Registry ( RegistryID, SubtypeID ) VALUES ( 'AaronTestTwo', 'Townsperson' );
+INSERT INTO CharacterDefinition ( CharacterID, HouseID, Year, RealizationFidelity, BirthdayDate, AlwaysProtected ) VALUES ( 'AaronTest', 'Unaffiliated', '0', '2', '1', '0' );
+INSERT INTO CharacterDefinition ( CharacterID, Year, RealizationFidelity, BirthdayDate, AlwaysProtected ) VALUES ( 'AaronTestTwo', '0', '2', '1', '0' );
+INSERT INTO ActorDefinition ( RegistryID, GenderID, SkeletonTypeID ) VALUES ( 'AaronTest', 'F', 'AdultFemale' );
+INSERT INTO ActorDefinition ( RegistryID, GenderID, SkeletonTypeID ) VALUES ( 'AaronTestTwo', 'F', 'AdultFemale' );
+INSERT INTO Schedule_Overland ( CharacterID, ActivityID, Priority, OverrideLocationID, PropTypeID, OverrideStartTime, OverrideEndTime, EntryTypeID, ScheduleKeys ) VALUES ( 'AaronTest', 'GoToBed', '0', 'HM_Ollivanders_Vendor', 'None', '2400', '2400', 'Time', 'Main' );
+INSERT INTO Schedule_Overland ( CharacterID, ActivityID, Priority, OverrideLocationID, PropTypeID, OverrideStartTime, OverrideEndTime, EntryTypeID, ScheduleKeys ) VALUES ( 'AaronTestTwo', 'GoToBed', '0', 'HM_Ollivanders_Vendor', 'None', '2400', '2400', 'Time', 'Main' );
+INSERT INTO Locations ( LocationID, XPos, YPos, ZPos, ZRot, WorldID, TypeID ) VALUES ( 'AaronTestHM_Ollivanders_VendorBed', '387473.090000', '-513724.590000', '-83307.560000', '0', 'Hogsmeade', 'StationBed' );
+INSERT INTO Locations ( LocationID, XPos, YPos, ZPos, ZRot, WorldID, TypeID ) VALUES ( 'AaronTestTwoHM_Ollivanders_VendorBed', '387473.090000', '-513724.590000', '-83307.560000', '0', 'Hogsmeade', 'StationBed' );
+INSERT INTO VirtualContainerList ( VContainerID, SubtypeID ) VALUES ( 'ITEM_Outfit_Aaron_Test1', 'SingleItem' );
+INSERT INTO LootContainerContents ( LootCategoryID, ContainerID, ContainerRandomWeight, ContainerWeightAdjust, ItemRollCount, NPCRangeLow, NPCRangeHigh, GenerationType ) VALUES ( 'VEND_GerboldOllivander', 'ITEM_Outfit_Aaron_Test1', '0', '0', '0', '1', '100', 'Normal' );

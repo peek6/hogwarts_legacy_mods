@@ -1,0 +1,19 @@
+{
+	"FileVersion": 3,
+	"Version": 6,
+	"VersionName": "0EB7AE9249102DB9E429FE8126EE195F",
+	"FriendlyName": "aaron_test_1",
+	"Description": "First test - new NPC and outfit in Ollivander's&cf_ugcID=1131342",
+	"Category": "UGC",
+	"CreatedBy": "Aaron Klein",
+	"CreatedByURL": "",
+	"DocsURL": "",
+	"MarketplaceURL": "https://legacy.curseforge.com/hogwarts-legacy-testing-staging-branch/mods/aaron-test-1",
+	"SupportURL": "",
+	"SDKVersion": 1287398,
+	"CanContainContent": true,
+	"IsBetaVersion": false,
+	"IsExperimentalVersion": false,
+	"Installed": false,
+	"CookedCKitVersion": 6
+}
